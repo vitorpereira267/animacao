@@ -109,6 +109,28 @@
             height: 0;
             object-fit: cover;
         }
+        .cards1 .box .content h2,
+        .cards1 .box .content p,
+        .cards1 .box .content a{
+            opacity: 0;
+            transition: 0.5s;
+            transform: translateY(20px);
+        }
+        .cards1 .box:hover .content h2{
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.5s;
+        }
+        .cards1 .box:hover .content p{
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.7s;
+        }
+        .cards1 .box:hover .content a{
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.9s;
+        }
     </style>
 </body>
 </html>
