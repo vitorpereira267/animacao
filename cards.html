@@ -48,6 +48,54 @@
             </div>
         </div>
     </div>
+    <div class="cards2">
+            <div class="box2">
+                <div class="face face1">
+                    <div class="content">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit quod esse sit tenetur rerum fuga totam facilis iusto et.</p>      
+                    </div>
+                </div>
+            <div class="face face2">
+                <h2>01</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="face face1">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit quod esse sit tenetur rerum fuga totam facilis iusto et.</p>      
+                </div>
+            </div>
+        <div class="face face2">
+            <h2>02</h2>
+        </div>
+            </div>
+            <div class="box2">
+                <div class="face face1">
+                    <div class="content">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit quod esse sit tenetur rerum fuga totam facilis iusto et.</p>      
+                    </div>
+                </div>
+            <div class="face face2">
+                <h2>03</h2>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="face face1">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae velit quod esse sit tenetur rerum fuga totam facilis iusto et.</p>      
+                </div>
+            </div>
+        <div class="face face2">
+            <h2>04</h2>
+        </div>
+</div>
+        
+        
+</div>
     <style>
         .cards1 {
             position: relative;
@@ -130,6 +178,54 @@
             opacity: 1;
             transform: translateY(0);
             transition-delay: 0.9s;
+        }
+        .cards2{
+            width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            grid-gap: 5px;
+            margin: 50px 0;
+            font-family: consolas;
+        }
+        .cards2 .box2{
+            position: relative;
+            width: 280px;
+            height: 400px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+        }
+        .cards2 .box2:nth-child(1) .face.face2{
+            background: linear-gradient(45deg, #3503ad, #f7308c);
+        }
+        .cards2 .box2:nth-child(2) .face.face2{
+            background: linear-gradient(45deg, #ccff00, #09afff);
+        }
+        .cards2 .box2:nth-child(3) .face.face2{
+            background: linear-gradient(45deg, #e91e63, #ffeb3b);
+        }
+        .cards2 .box2:nth-child(4) .face.face2{
+            background: linear-gradient(45deg, #000, #444);
+        }
+        .cards2 .box2 .face.face2::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255,255,255,.1);
+        }
+        .cards2 .box2 .face.face2 h2{
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0,0,0,.2);
+        }
+        .cards2 .box2:hover .face.face2 h2{
+            font-size: 2em;
         }
     </style>
 </body>
