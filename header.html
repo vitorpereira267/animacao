@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header1">
+        <div class="com-imagem">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illo minus, iste ipsam consectetur laudantium accusantium dolores pariatur adipisci iusto debitis ipsum voluptates aliquam alias.</h2>
+        </div>
+        <div class="sem-imagem">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident ex necessitatibus, incidunt eum maiores libero iste illum magni possimus maxime voluptatum repudiandae, fuga sint?</h2>
+        </div>
+    </div>
+    <style>
+        .header1{
+            position: relative;
+            font-family: sans-serif;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .header1 .com-imagem,
+        .header1 .sem-imagem{
+            position: relative;
+            width: 50%;
+            background: #1B335F;
+            overflow: hidden;
+        }
+        .header1 .com-imagem{
+            background: url(img5.jpg);
+            background-size: cover;
+        }
+        .header1 .com-imagem h2,
+        .header1 .sem-imagem h2{
+            position: absolute;
+            line-height: 100vh;
+            white-space: nowrap;
+            font-size: 12em;
+        }
+        .header1 .com-imagem h2{
+            color: transparent;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: #fff;
+            left: 100%;
+            animation: animate-text 60s linear infinite;
+        }
+        .header1 .sem-imagem h2{
+            color: #fff;
+            animation: animate-text 60s linear infinite;
+        }
+        @keyframes animete-text{
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</body>
+</html>
